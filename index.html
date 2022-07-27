@@ -50,6 +50,7 @@
     
             <div class="initContainer">
                 <div class="left">
+                    <div class="respLabel" style="margin-bottom: 5px;">ACTUAL RESPONSE</div>
                     <textarea spellcheck="false" id="textarealeft" placeholder="Enter JSON to compare, enter an URL to JSON" tabindex="1"></textarea>
                     <pre id="errorLeft" class="error"></pre>
                     <span class="fileInput">or <input type="file" id="fileLeft" onchange="jdd.handleFiles(this.files, 'left')" tabindex="4"></span>
@@ -64,6 +65,7 @@
                 </div>
     
                 <div class="right">
+                    <div class="respLabel" style="margin-bottom: 5px;">EXPECTED RESPONSE</div>
                     <textarea spellcheck="false" class="right" id="textarearight" placeholder="Enter JSON to compare, enter an URL to JSON" tabindex="2"></textarea>
                     <pre id="errorRight" class="error"></pre>
                     <span class="fileInput">or <input type="file" id="fileRight" onchange="jdd.handleFiles(this.files, 'right')" tabindex="5"></span>
@@ -73,6 +75,14 @@
             <div class="diffcontainer">
                 <div id="report">
                 </div>
+                <section>
+                    <div class="respLabel" style="margin-right: auto;">
+                        ACTUAL RESPONSE
+                    </div>
+                    <div class="respLabel" style="margin-right: 44%;">
+                        EXPECTED RESPONSE
+                    </div>
+                </section>
                 <pre id="out" class="left" class="codeBlock"></pre>
                 <pre id="out2" class="right" class="codeBlock"></pre>
                 <ul id="toolbar" class="toolbar"></ul>
