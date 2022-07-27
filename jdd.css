@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap');
+
 body {
     padding: 0;
     margin: 0;
@@ -117,7 +119,6 @@ pre.codeBlock.right {
     width: 40%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 1em;
 }
 
 ul.toolbar {
@@ -317,4 +318,14 @@ span.fileInput {
 .progress .throbber-loader:not(:required) {
     display: block;
     margin: 5px auto;
+}
+
+section {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.respLabel {
+    font-family: 'Fira Code', monospace;
+    font-size: large;
 }
